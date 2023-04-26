@@ -1,0 +1,109 @@
+@import "./reset";
+
+.newPigeon {
+    color: $yellow-color;
+    .card {
+        background-color: $dark-color;
+        input {
+            width: 100%;
+        }        
+        .body-card {
+            input,
+            .btn-secondary,
+            textarea {
+                border-radius: 0 10px 10px 0;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .img-box{
+                border: 2px solid $yellow-color;
+            }
+            .upload {
+                input {
+                    display: none;
+                }
+                label {
+                    margin-top: 10px;
+                    padding: 8px 20px;
+                    border: 2px $yellow-color dashed;
+                    cursor: pointer;
+                }
+            }
+            .sire input,
+            .dam input {
+                border-radius: 0;
+            }
+            .sex .form-select {
+                width: 100%;
+                border-radius: 0 10px 10px 0;
+            option{
+                cursor: pointer;
+                color: $yellow-color;
+                background-color: $dark-color;
+                &:hover {
+                    color: $dark-color;
+                }
+            }
+            }
+        }
+        .dropdown,
+        .dropdown-menu {
+            width: 100%;
+            background-color: $dark-color;
+        }
+        .dropdown .btn {
+            color: $dark-color;
+            background-color: $section-color;
+            text-align: start;
+            border-radius: 0 10px 10px 0;
+        }
+        .dropdown-menu li{
+            color: $section-color;
+            &:hover {
+                background-color: $yellow-color;
+                color: $dark-color;
+            }
+        }
+        .form-select,
+        .form-control {
+            height: calc(1.5em + 0.75rem + 2px);
+            outline: none;
+            border-radius: 0;
+        }
+        .extra textarea {
+            width: 100%;
+            resize: none;
+            height: 11em;
+            outline: none;
+        }
+        .extra-label {
+            height: 11em;
+        }
+        .button  {
+            width: 500px;
+            button {
+                background-color: $yellow-color;
+                color: $dark-color;
+                border: none;
+                width: 100%;
+                transition: 0.6s;
+                &:hover {
+                    background-color: #f3941f;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+button.btn.btn-secondary.dropdown-toggle {
+    width: 100%;
+}
+
+button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split {
+    height: 38px;
+    background-color: #fff;
+    color: $dark-color;
+    width: 50px;
+}

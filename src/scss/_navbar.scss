@@ -1,0 +1,57 @@
+@import "./reset";
+.navbar {
+    background-color: $dark-color;
+    border-bottom: 2px solid $yellow-color;
+    .title {
+        color: $yellow-color;
+    }
+    input {
+        background-color: $section-color;
+        border-radius: 10px 0 0 10px;
+    }
+    .search-icon {
+        background-color: $yellow-color;
+        padding: 7px 10px;
+        border-radius: 0 10px 10px 0;
+        cursor: pointer;
+    }
+    .navbar-nav {
+        .nav-link {
+            color: #fff;
+            &.active {
+                color: #fff;
+            }
+            &:hover,
+            &:focus {
+                color: $yellow-color;
+            }
+        }
+        .nav-item {
+            cursor: pointer;
+        }
+    } 
+    .search {
+        border-left: 1px solid $yellow-color;
+        svg {
+            color: $yellow-color
+        }
+    }
+    .navbar-toggler {
+        color: white;
+        border-color: white;
+        font-size: 25px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .navbar-toggler[aria-expanded="true"] {
+        border-color: $yellow-color;
+    }
+}
+@media (max-width:991px) {
+    .navbar .navbar-nav{
+        flex-direction: row !important;
+        justify-content: space-around;
+        margin: 13px 0;
+    }
+}

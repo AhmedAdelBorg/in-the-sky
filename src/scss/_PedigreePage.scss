@@ -1,0 +1,135 @@
+@import "./reset";
+
+.pedigree {
+    width: 100%;
+
+    .card {
+        background-color: $dark-color;
+        position: relative;
+
+        .name-pigon {
+            color: $yellow-color;
+        }
+
+        .image {
+            position: absolute;
+            left: 35px;
+            top: 100px;
+            width: 250px;
+            height: 250px;
+            border: 10px solid $yellow-color;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .info {
+            position: absolute;
+            left: 35px;
+            bottom: 50px;
+            width: 250px;
+            border: 2px solid $yellow-color;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
+
+    .pigon-son,
+    .parents,
+    .grands,
+    .parents-grands {
+        width: 90%;
+        background-color: white;
+        border: 3px solid $yellow-color;
+        border-radius: 10px;
+        box-shadow: rgb(234 178 109 / 59%) 1.95px 1.95px 2.6px;
+    }
+
+    .pigon-son {
+        height: 700px;
+        position: relative;
+
+        .after {
+            content: "";
+            position: absolute;
+            width: 27px;
+            height: 3px;
+            right: -27px;
+            top: calc(50%);
+            background-color: $yellow-color;
+        }
+        .line {
+            position: absolute;
+            width: 3px;
+            height: 827px;
+            right: -30px;
+            top: calc(50%);
+            transform: translateY(-50%);
+            background-color: $yellow-color;
+        }
+    }
+
+    .line::before,
+    .line::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        left: 0;
+        background-color: $yellow-color;
+    }
+
+    .line::before {
+        top: calc(0%);
+    }
+
+    .line::after {
+        bottom: calc(0%);
+    }
+    .parents {
+        height: 800px;
+        position: relative;
+        .after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            right: -30px;
+            top: calc(50%);
+            background-color: $yellow-color;
+        }
+        .line {
+            position: absolute;
+            width: 3px;
+            height: 415px;
+            right: -32px;
+            top: calc(50%);
+            transform: translateY(-50%);
+            background-color: $yellow-color;
+        }
+    }
+    .grands {
+        height: 400px;
+        position: relative;
+        .after {
+            position: absolute;
+            width: 29px;
+            height: 3px;
+            right: -30px;
+            top: calc(50%);
+            background-color: $yellow-color;
+        }
+        .line {
+            position: absolute;
+            width: 3px;
+            height: 206px;
+            right: -30px;
+            top: calc(51%);
+            transform: translateY(-50%);
+            background-color: $yellow-color;
+        }
+    }
+    .parents-grands {
+        height: 200px;
+        position: relative;
+    }
+}
